@@ -44,4 +44,8 @@
 		<ProjectReference Include="../../modules/portador/Project.Modular.Portador.Application/Project.Modular.Portador.Application.csproj" />
 	</ItemGroup>
 
+	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Portador|AnyCPU' Or '$(Configuration)|$(Platform)'=='Portador_Debug|AnyCPU'">
+		<ProjectReference Include="../../modules/portador/Project.Modular.Portador.Application/Project.Modular.Portador.Application.csproj" />
+	</ItemGroup>
+	
 </Project>
