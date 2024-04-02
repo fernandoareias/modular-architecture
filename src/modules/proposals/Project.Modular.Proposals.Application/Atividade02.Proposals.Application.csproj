@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Proposals\" />
+    <None Remove="Proposals\Commands\" />
+    <None Remove="Proposals\Queries\" />
+    <None Remove="Proposals\Commands\Handlers\" />
+    <None Remove="Proposals\Queries\Handlers\" />
+    <None Remove="Proposals\Commands\Validators\" />
+    <None Remove="Proposals\Queries\Validators\" />
+    <None Remove="Proposals\Commands\Views\" />
+    <None Remove="Proposals\Events\" />
+    <None Remove="Proposals\Events\Handlers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Proposals\" />
+    <Folder Include="Proposals\Commands\" />
+    <Folder Include="Proposals\Queries\" />
+    <Folder Include="Proposals\Commands\Handlers\" />
+    <Folder Include="Proposals\Queries\Handlers\" />
+    <Folder Include="Proposals\Commands\Validators\" />
+    <Folder Include="Proposals\Queries\Validators\" />
+    <Folder Include="Proposals\Commands\Views\" />
+    <Folder Include="Proposals\Events\" />
+    <Folder Include="Proposals\Events\Handlers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\Atividade02.Core\Atividade02.Core.csproj" />
+    <ProjectReference Include="..\Atividade02.Proposals.Domain\Atividade02.Proposals.Domain.csproj" />
+    <ProjectReference Include="..\Atividade02.Proposals.Domain.Services\Atividade02.Proposals.Domain.Services.csproj" />
+  </ItemGroup>
+</Project>

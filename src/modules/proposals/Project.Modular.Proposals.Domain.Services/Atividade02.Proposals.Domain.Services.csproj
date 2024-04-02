@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Atividade02.Proposals.Domain\Atividade02.Proposals.Domain.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Atividade02.Core\Atividade02.Core.csproj" />
+    <ProjectReference Include="..\Atividade02.Proposals.Infrastructure\Atividade02.Proposals.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

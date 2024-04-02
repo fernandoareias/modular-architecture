@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Proposals\" />
+    <None Remove="Proposals\Enums\" />
+    <None Remove="Proposals\Entities\" />
+    <None Remove="Proposals\Entities\Proponents\" />
+    <None Remove="Proposals\Entities\Proponents\ValueObjects\" />
+    <None Remove="Proposals\Entities\Policies\" />
+    <None Remove="Proposals\Entities\Policies\Common\" />
+    <None Remove="Proposals\Events\" />
+    <None Remove="Proposals\Entities\Policies\Events\" />
+    <None Remove="Proposals\Events\Factories\" />
+    <None Remove="Proposals\Entities\Policies\Events\PreAnalysis\" />
+    <None Remove="Proposals\Entities\Policies\Events\PreAnalysis\Factories\" />
+    <None Remove="Proposals\Entities\Policies\Events\FraudAnalysisPolicy\" />
+    <None Remove="Proposals\Entities\Policies\Events\FraudAnalysisPolicy\Factories\" />
+    <None Remove="Proposals\Entities\Policies\Events\Formalization\" />
+    <None Remove="Proposals\Entities\Policies\Events\Formalization\Factories\" />
+    <None Remove="Proposals\Services\" />
+    <None Remove="Proposals\Repositories\" />
+    <None Remove="Proposals\Repositories\Common\" />
+    <None Remove="Stores\" />
+    <None Remove="Stores\Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Proposals\" />
+    <Folder Include="Proposals\Enums\" />
+    <Folder Include="Proposals\Entities\" />
+    <Folder Include="Proposals\Entities\Proponents\" />
+    <Folder Include="Proposals\Entities\Proponents\ValueObjects\" />
+    <Folder Include="Proposals\Entities\Policies\" />
+    <Folder Include="Proposals\Entities\Policies\Common\" />
+    <Folder Include="Proposals\Events\" />
+    <Folder Include="Proposals\Entities\Policies\Events\" />
+    <Folder Include="Proposals\Events\Factories\" />
+    <Folder Include="Proposals\Entities\Policies\Events\PreAnalysis\" />
+    <Folder Include="Proposals\Entities\Policies\Events\PreAnalysis\Factories\" />
+    <Folder Include="Proposals\Entities\Policies\Events\FraudAnalysisPolicy\" />
+    <Folder Include="Proposals\Entities\Policies\Events\FraudAnalysisPolicy\Factories\" />
+    <Folder Include="Proposals\Entities\Policies\Events\Formalization\" />
+    <Folder Include="Proposals\Entities\Policies\Events\Formalization\Factories\" />
+    <Folder Include="Proposals\Services\" />
+    <Folder Include="Proposals\Repositories\" />
+    <Folder Include="Proposals\Repositories\Common\" />
+    <Folder Include="Stores\" />
+    <Folder Include="Stores\Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\Atividade02.Core\Atividade02.Core.csproj" />
+  </ItemGroup>
+</Project>

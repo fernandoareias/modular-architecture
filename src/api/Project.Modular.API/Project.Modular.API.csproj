@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Configurations>Proposals;Proposals_Debug;Portador;Portador_Debug;CreditCard;CreditCard_Debug</Configurations>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	</ItemGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Proposals|AnyCPU'">
+		<Optimize>True</Optimize>
+		<DefineConstants>PROPOSALS</DefineConstants>
+	</PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Proposals_Debug|AnyCPU'">
+		<Optimize>False</Optimize>
+		<DefineConstants>PROPOSALS_DEBUG</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Portador|AnyCPU'">
+		<Optimize>True</Optimize>
+		<DefineConstants>PORTADOR</DefineConstants>
+	</PropertyGroup>
+
+ 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Portador_Debug|AnyCPU'">
+		<Optimize>False</Optimize>
+		<DefineConstants>PORTADOR_DEBUG</DefineConstants>
+	</PropertyGroup>
+
+  	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CreditCard|AnyCPU'">
+		<Optimize>True</Optimize>
+		<DefineConstants>CREDIT_CARD</DefineConstants>
+	</PropertyGroup>
+
+  	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CreditCard_Debug|AnyCPU'">
+		<Optimize>False</Optimize>
+		<DefineConstants>CREDIT_CARD_DEBUG</DefineConstants>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Portador|AnyCPU' Or '$(Configuration)|$(Platform)'=='Portador_Debug|AnyCPU'">
+		<ProjectReference Include="../../modules/portador/Project.Modular.Portador.Application/Project.Modular.Portador.Application.csproj" />
+	</ItemGroup>
+
+</Project>
